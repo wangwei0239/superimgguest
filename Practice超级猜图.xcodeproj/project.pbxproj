@@ -15,6 +15,8 @@
 		4AD62E4F1E641B06003CA526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD62E4D1E641B06003CA526 /* LaunchScreen.storyboard */; };
 		4AD62E5A1E641B06003CA526 /* Practice____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD62E591E641B06003CA526 /* Practice____Tests.m */; };
 		4AD62E651E641B06003CA526 /* Practice____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD62E641E641B06003CA526 /* Practice____UITests.m */; };
+		4AD62E771E642108003CA526 /* questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AD62E761E642108003CA526 /* questions.plist */; };
+		4AD62E7A1E64211E003CA526 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD62E791E64211E003CA526 /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		4AD62E601E641B06003CA526 /* Practice超级猜图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practice超级猜图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD62E641E641B06003CA526 /* Practice____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Practice____UITests.m"; sourceTree = "<group>"; };
 		4AD62E661E641B06003CA526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD62E761E642108003CA526 /* questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = questions.plist; sourceTree = "<group>"; };
+		4AD62E781E64211E003CA526 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		4AD62E791E64211E003CA526 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +106,10 @@
 		4AD62E3E1E641B06003CA526 /* Practice超级猜图 */ = {
 			isa = PBXGroup;
 			children = (
-				4AD62E421E641B06003CA526 /* AppDelegate.h */,
-				4AD62E431E641B06003CA526 /* AppDelegate.m */,
-				4AD62E451E641B06003CA526 /* ViewController.h */,
-				4AD62E461E641B06003CA526 /* ViewController.m */,
-				4AD62E481E641B06003CA526 /* Main.storyboard */,
-				4AD62E4B1E641B06003CA526 /* Assets.xcassets */,
-				4AD62E4D1E641B06003CA526 /* LaunchScreen.storyboard */,
-				4AD62E501E641B06003CA526 /* Info.plist */,
+				4AD62E751E641B33003CA526 /* Controllers */,
+				4AD62E741E641B24003CA526 /* Models */,
+				4AD62E731E641B19003CA526 /* Views */,
+				4AD62E721E641B10003CA526 /* Ohter */,
 				4AD62E3F1E641B06003CA526 /* Supporting Files */,
 			);
 			path = "Practice超级猜图";
@@ -117,6 +118,9 @@
 		4AD62E3F1E641B06003CA526 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4AD62E761E642108003CA526 /* questions.plist */,
+				4AD62E501E641B06003CA526 /* Info.plist */,
+				4AD62E4B1E641B06003CA526 /* Assets.xcassets */,
 				4AD62E401E641B06003CA526 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +142,42 @@
 				4AD62E661E641B06003CA526 /* Info.plist */,
 			);
 			path = "Practice超级猜图UITests";
+			sourceTree = "<group>";
+		};
+		4AD62E721E641B10003CA526 /* Ohter */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62E421E641B06003CA526 /* AppDelegate.h */,
+				4AD62E431E641B06003CA526 /* AppDelegate.m */,
+			);
+			name = Ohter;
+			sourceTree = "<group>";
+		};
+		4AD62E731E641B19003CA526 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62E481E641B06003CA526 /* Main.storyboard */,
+				4AD62E4D1E641B06003CA526 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4AD62E741E641B24003CA526 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62E781E64211E003CA526 /* Question.h */,
+				4AD62E791E64211E003CA526 /* Question.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4AD62E751E641B33003CA526 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4AD62E451E641B06003CA526 /* ViewController.h */,
+				4AD62E461E641B06003CA526 /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD62E771E642108003CA526 /* questions.plist in Resources */,
 				4AD62E4F1E641B06003CA526 /* LaunchScreen.storyboard in Resources */,
 				4AD62E4C1E641B06003CA526 /* Assets.xcassets in Resources */,
 				4AD62E4A1E641B06003CA526 /* Main.storyboard in Resources */,
@@ -274,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD62E471E641B06003CA526 /* ViewController.m in Sources */,
+				4AD62E7A1E64211E003CA526 /* Question.m in Sources */,
 				4AD62E441E641B06003CA526 /* AppDelegate.m in Sources */,
 				4AD62E411E641B06003CA526 /* main.m in Sources */,
 			);
