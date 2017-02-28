@@ -75,16 +75,28 @@
                                 <state key="normal" title="Help" image="icon_help" backgroundImage="btn_left"/>
                                 <state key="highlighted" image="icon_help" backgroundImage="btn_left_highlighted"/>
                             </button>
+                            <view contentMode="scaleToFill" id="ojn-bw-r7F">
+                                <rect key="frame" x="0.0" y="255" width="375" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-255" maxX="475" maxY="290"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="sCf-WM-lNd">
+                                <rect key="frame" x="0.0" y="317" width="375" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-255" maxX="475" maxY="290"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="answerView" destination="ojn-bw-r7F" id="1gL-tJ-Ir3"/>
                         <outlet property="btnIcon" destination="AgI-3b-Zta" id="g9e-WE-w9O"/>
                         <outlet property="btnNext" destination="zRh-iw-wAt" id="sET-cF-MEd"/>
                         <outlet property="btnScore" destination="IsE-7b-iHc" id="y3R-3g-eYY"/>
                         <outlet property="lblIndex" destination="p2L-8Y-kiH" id="Vd1-sp-niR"/>
                         <outlet property="lblTitle" destination="4GP-l3-xiO" id="VQ0-xJ-lrh"/>
+                        <outlet property="optionsView" destination="sCf-WM-lNd" id="GRc-G8-Ajz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
